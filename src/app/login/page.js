@@ -36,6 +36,9 @@ const Login = () => {
                 localStorage.setItem("appetite_token", data.token)
                 window.location.href = '/'
             }
+            if (data.error === "Invalid email or password") {
+                alert("Invalid email or password")
+            }
         } catch (error) {
             console.log(error);
         } finally {
