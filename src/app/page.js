@@ -146,7 +146,6 @@ const Home = () => {
         </ul>
       </nav>
       <div className={styles.hero}>
-        <button className={styles.themeToggle}></button>
         {showSec1 && (
           <div className={`fade ${cooking ? "fade-out" : "fade-in"}`}>
             <div className={styles.container}>
