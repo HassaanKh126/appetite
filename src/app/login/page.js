@@ -56,6 +56,10 @@ const Login = () => {
                         <button type="submit" className={styles.lbutton} disabled={loading}>{loading ? ("Loading..."):("Log In")}</button>
                     </form>
                     <a className={styles.bottomText} href="/register">{"Don't have an account? Register."}</a>
+                    <div style={{marginTop: 30, color: "#4d3b2c", fontFamily: "Patrick Hand", fontWeight: "400", display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                        <p>Email: demo1234@gmail.com</p>
+                        <p>Password: demo1234</p>
+                    </div>
                 </div>
             </div>
         </div>
