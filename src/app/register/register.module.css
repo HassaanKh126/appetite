@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300..700&family=Patrick+Hand&display=swap');
+
+.lpage {
+  height: 100vh;
+  background-color: #faebd7;
+}
+
+.lhero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+}
+
+.ltitle {
+  text-align: left;
+  font-size: 3.4rem;
+  font-family: 'Chewy', cursive;
+  font-weight: 400;
+  color: #564533;
+}
+
+.ldescription {
+  text-align: left;
+  font-size: 2.2rem;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 400;
+  color: #564533;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  font-family: 'Patrick Hand', cursive;
+  background-color: transparent;
+  border: 1.5px solid #5645338f;
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: #564533;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #564533;
+}
+
+.input::placeholder {
+  color: #a89f8d;
+}
+
+.input:disabled {
+  background-color: #f0e6d2;
+  color: #a89f8d;
+  border-color: #d0c6b2;
+  cursor: not-allowed;
+}
+
+.lbutton {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Fredoka', cursive;
+  font-weight: 400;
+  background-color: #564533;
+  color: #faebd7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.2s;
+}
+
+.lbutton:hover {
+  background-color: #6b5a4c;
+}
+
+.lbutton:active {
+  background-color: #4d3b2c;
+}
+
+.lbutton:disabled {
+  background-color: #766658;
+  cursor: default;
+}
+
+.themeToggle {
+  position: absolute;
+  top: 20px;
+  /* Some space from the top */
+  right: 20px;
+  /* Add this to move it to the right */
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  font-family: 'Fredoka', cursive;
+  background-color: #a89a8c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.themeToggle:hover {
+  background-color: #6b5a4c;
+}
+
+.themeToggle:active {
+  background-color: #4d3b2c;
+}
+
+
+.chefimage {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.bottomText {
+  width: 100%;
+  text-align: center;
+  color: #4d3b2c;
+  font-family: "Fredoka", sans-serif;
+}

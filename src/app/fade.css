@@ -1,0 +1,13 @@
+/* FadeComponent.css */
+.fade {
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

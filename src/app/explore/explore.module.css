@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@300..700&family=Patrick+Hand&display=swap');
+
+.page {
+    height: 100vh;
+    background-color: #faebd7;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    padding: 5vh;
+    background-color: #413426;
+    color: #faebd7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    color: #faebd7;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: "Patrick Hand", sans-serif;
+    font-size: 1.4rem;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+}
+
+.themeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-family: 'Fredoka', cursive;
+    background-color: #a89a8c;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+.themeToggle:hover {
+    background-color: #6b5a4c;
+}
+
+.themeToggle:active {
+    background-color: #4d3b2c;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.postContainer {
+    padding: 20px;
+    background-color: #f5e5d1;
+    border: 2px #564533 solid;
+    margin: 10px;
+    border-radius: 20px;
+    justify-self: center;
+}
+
+.postprofilepic {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #413426;
+    color: #faebd7;
+    border: none;
+}
+
+.postUsername {
+    font-size: 1rem;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    color: #564533;
+    margin: 0;
+    cursor: pointer;
+}
+
+.postUsername:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.postTime {
+    font-size: 0.8rem;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 900;
+    color: #564533;
+}
+
+.dishContainer {
+    background-color: #413426;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.dishContainerName {
+    font-size: 2.4rem;
+    font-family: "Chewy", cursive;
+    font-weight: 400;
+    color: #faebd7;
+    text-align: center;
+}
+
+.postIngredient {
+    font-size: 1.4rem;
+    font-family: "Chewy", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+.postNutrition {
+    font-size: 1.4rem;
+    font-family: "Chewy", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+.postInstruction {
+    font-size: 1.4rem;
+    font-family: "Chewy", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+.postIngredients {
+    font-size: 1rem;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-align: left;
+}
+
+.postInstructions {
+    font-size: 1rem;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-align: left;
+    width: 400px;
+}
+
+.likesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.likeShare {
+    font-size: 1rem;
+    font-family: "Patrick Hand", cursive;
+    color: #faebd7;
+    background-color: #413426;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.2s;
+}
+
+.likeShare:hover {
+    background-color: #6b5a4c;
+    cursor: pointer;
+}
+
+.likeShareText {
+    color: #564533;
+    background-color: #f5e5d1;
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Patrick Hand", cursive;
+}
+
+.likeShareText:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+
+
+
+
+
+
+
+/* Modal overlay styling */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it overlays above other content */
+}
+
+/* Modal box styling */
+.modal {
+    background-color: #faebd7;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 4px #5f5040 solid;
+}
+
+.modal h3 {
+    font-size: 2rem;
+    font-family: "Chewy", cursive;
+    font-weight: 400;
+    color: #564533;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+.modal ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.modal ul li {
+    padding: 5px 0;
+    color: #564533;
+    font-family: "Patrick Hand", cursive;
+}
+
+.modal ul li button {
+    background-color: transparent;
+    color: #564533;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1rem;
+    font-family: "Patrick Hand", cursive;
+}
+
+.modal ul li button:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.closeBtn {
+    background-color: #4d3b2c;
+    color: #faebd7;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.closeBtn:hover {
+    background-color: #5c4838;
+}
+
+.closeBtn2 {
+    background-color: #4d3b2c;
+    color: #faebd7;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.closeBtn2:hover {
+    background-color: #5c4838;
+}
+
+.recipeType {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.recipeType h1 {
+    color: #4d3b2c;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.8rem;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.recipeType h1:hover {
+    text-decoration: underline;
+}
+
+.norec {
+  font-size: 1.5rem;
+  font-family: "Patrick Hand", cursive;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 400;
+  color: #413426;
+}
+
+.comments {
+    color: #564533;
+    background-color: #f5e5d1;
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Patrick Hand", cursive;
+    cursor: pointer;
+}
+
+.comments:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.commentsText {
+    color: #564533;
+    background-color: #f5e5d1;
+    border: none;
+    font-size: 1.1rem;
+    font-family: "Patrick Hand", cursive;
+}
+
+
+.input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 60%;
+  font-family: 'Patrick Hand', cursive;
+  background-color: transparent;
+  border: 1.5px solid #5645338f;
+  border-radius: 10px;
+  color: #564533;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #564533;
+}
+
+.input::placeholder {
+  color: #a89f8d;
+}
+
+
+.commentdiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
