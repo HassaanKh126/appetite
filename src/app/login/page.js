@@ -55,7 +55,7 @@ const Login = () => {
                         <input id="password" value={password} onChange={(e) => { setPassword(e.target.value) }} className={styles.input} type="password" placeholder="Password" required />
                         <button type="submit" className={styles.lbutton} disabled={loading}>{loading ? ("Loading..."):("Log In")}</button>
                     </form>
-                    <a className={styles.bottomText} href="/register">Don't have an account? Register.</a>
+                    <a className={styles.bottomText} href="/register">{"Don't have an account? Register."}</a>
                 </div>
             </div>
         </div>

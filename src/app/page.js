@@ -164,7 +164,7 @@ const Home = () => {
                   placeholder="I want to eat something that I can make quickly..."
                 />
                 <p className={styles.subdescription}><b>Suggestion:</b> Italian Food, Chinese Food, Indian Food, Spicy Food, Veg or Non Veg etc.</p>
-                <button type="submit" className={styles.button} disabled={cooktext.trim() === "" ? (true) : (false)}>Let's get cooking!</button>
+                <button type="submit" className={styles.button} disabled={cooktext.trim() === "" ? (true) : (false)}>{"Let's get cooking!"}</button>
               </form>
             </div>
           </div>
