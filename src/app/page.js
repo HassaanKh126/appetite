@@ -47,6 +47,10 @@ const Home = () => {
     getToken()
   }, [])
 
+  useEffect(()=>{
+    window.location.href = "https://play.google.com/store/apps/details?id=com.byte9962.appetite"
+  },[])
+
   const handleCooking = async (e) => {
     e.preventDefault()
     setCooking(true)
